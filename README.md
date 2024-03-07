@@ -1,3 +1,7 @@
+OBS
+---
+Se puede rescartar el video y el csv desde el servidor, se pueden ingresar datos al csv, pero NO PUDE TERMINAR EL ELIMINAR EL ULTIMO REGISTRO DEL CSV LOCAL QUE EN EL EL CSV DEL SERVIDOR SERIA UNO QUE NO NECESARIAMENTE DEBE ESTAR AL FINAL.
+
                                                        
 BOT ANALISIS FSICO
 
