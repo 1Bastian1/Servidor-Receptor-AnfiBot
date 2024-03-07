@@ -1,1 +1,0 @@
-# Servidor-Receptor-AnfiBot
