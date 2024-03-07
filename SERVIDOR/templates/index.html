@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor</title>
+</head>
+<body>
+    <h1>SERVIDOR VIDEO SINERGIA</h1>
+    <img id="video" src="" alt="Video Stream" width="640" height="480">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.2/socket.io.js"></script>
+    <script>
+        // Conectar con el servidor Socket.IO
+        const socket = io();
+
+        // Escuchar el evento 'video_frame' y actualizar la imagen del video
+        socket.on('video_frame', function(data) {
+            const videoElement = document.getElementById('video');
+            videoElement.src = `data:image/jpeg;base64,${data.image}`;
+        });
+    </script>
+</body>
+</html>
